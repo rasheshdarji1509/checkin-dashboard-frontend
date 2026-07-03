@@ -231,6 +231,8 @@ const CustomerList = () => {
         return { label: 'Assigned', color: 'secondary', variant: 'filled' };
       case 'Completed':
         return { label: 'Completed', color: 'success', variant: 'filled' };
+      case 'Cancelled':
+        return { label: 'Cancelled', color: 'error', variant: 'outlined' };
       default:
         return { label: status, color: 'default', variant: 'outlined' };
     }
@@ -328,6 +330,7 @@ const CustomerList = () => {
                 <MenuItem value="Checked-In">Checked-In</MenuItem>
                 <MenuItem value="Assigned">Assigned</MenuItem>
                 <MenuItem value="Completed">Completed</MenuItem>
+                <MenuItem value="Cancelled">Cancelled</MenuItem>
               </TextField>
             </Grid>
           </Grid>
@@ -723,6 +726,7 @@ const COLORS = {
   'Checked-In': '#3b82f6',
   'Assigned': '#0ea5e9',
   'Completed': '#10b981',
+  'Cancelled': '#ef4444',
 };
 
 export default CustomerList;

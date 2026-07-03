@@ -363,6 +363,7 @@ const CustomerStatusPage = () => {
                           { status: 'In Discussion', desc: 'Active meeting/discussion is ongoing at the booth.' },
                           { status: 'Follow-Up Required', desc: 'Callbacks scheduled for further discussions.' },
                           { status: 'Completed', desc: 'Attendee check-in lifecycle concluded successfully.' },
+                          { status: 'Cancelled', desc: 'Customer check-in cancelled.' },
                         ].map((item, i) => (
                           <Box key={i} sx={{ display: 'flex', gap: 1.5, alignItems: 'flex-start' }}>
                             <Chip size="small" {...getStatusChipProps(item.status)} sx={{ fontWeight: 600, mt: 0.2 }} />
